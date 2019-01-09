@@ -1,0 +1,11 @@
+left : {{left}} {{img}}<br>
+<img src="{{img}}">
+<script>
+	document.onkeyup = function(e){
+		if (e.key==','){			
+			window.location='/undo/{{folder}}'
+		} else if ('abcdefghijklmnopqrstuvwxyz'.indexOf(e.key)>=0){
+			window.location='/move/{{folder}}/'+e.key	
+		}
+	}
+</script>
